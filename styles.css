@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+}
+
+#habit-tracker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#controls {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#habit-input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#habits {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.habit {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.habit-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.habit-week {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.habit-day {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e0ffe0;
+    cursor: pointer;
+}
+
+.habit-day.completed {
+    background-color: #d3ffd3;
+    text-decoration: line-through;
+}
